@@ -1,1 +1,1 @@
-I Recommened Dark mode
+I Recommend Dark mode
