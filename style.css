@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffd0;
+}
+
+#hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+  animation: fadeIn 2s ease-in;
+}
+
+#projects .project-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 200, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  transition: filter 0.3s ease;
+}
+
+.project-card img:hover {
+  filter: brightness(1.1);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100px;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+.skill-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #888;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; transform: translateY(30px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Default Light Theme (optional) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #00ffd0;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark Theme */
+body.dark {
+  --bg-color: #0a0a0a;
+  --text-color: #ffffff;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+section {
+  padding-top: 80px;
+  scroll-margin-top: 80px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ccc; 
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif; 
+  text-transform: uppercase;
+}
+
+.logo::first-letter {
+  color: #ffffff; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
